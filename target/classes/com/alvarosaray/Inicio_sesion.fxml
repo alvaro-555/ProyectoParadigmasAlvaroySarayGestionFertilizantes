@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alvarosaray.Controlador.InicioSesionController">
+   <children>
+      <ImageView fitHeight="546.0" fitWidth="260.0" layoutX="-13.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Inicio%20sesion.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="61.0" layoutY="46.0" text="Inicio Sesion">
+         <font><Font name="Alternate Gothic No.2 BT" size="27.0" /></font>
+         <textFill>
+            <LinearGradient endY="1.0">
+               <stops>
+                  <Stop><color><Color red="0.37280702590942383" /></color></Stop>
+                  <Stop offset="1.0"><color><Color red="0.07683831453323364" green="0.020508447661995888" blue="0.4429824650287628" /></color></Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="14.0" layoutY="94.0" text="Correo:">
+         <font><Font name="Alternate Gothic No.2 BT" size="27.0" /></font>
+         <textFill>
+            <LinearGradient endY="1.0">
+               <stops>
+                  <Stop><color><Color red="0.37280702590942383" /></color></Stop>
+                  <Stop offset="1.0"><color><Color red="0.07683831453323364" green="0.020508447661995888" blue="0.4429824650287628" /></color></Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="11.0" layoutY="196.0" text="Contraseña:">
+         <font><Font name="Alternate Gothic No.2 BT" size="27.0" /></font>
+         <textFill>
+            <LinearGradient endY="1.0">
+               <stops>
+                  <Stop><color><Color red="0.37280702590942383" /></color></Stop>
+                  <Stop offset="1.0"><color><Color red="0.07683831453323364" green="0.020508447661995888" blue="0.4429824650287628" /></color></Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtCorreo" layoutX="18.0" layoutY="133.0" opacity="0.61" style="-fx-border-color: red; -fx-background-color: blue; -fx-text-fill: white;" />
+      <PasswordField fx:id="txtContrasena" layoutX="11.0" layoutY="234.0" opacity="0.61" style="-fx-border-color: red; -fx-background-color: blue; -fx-text-fill: white;" />
+      <Button fx:id="btnIniciar" layoutX="48.0" layoutY="301.0" mnemonicParsing="false" onAction="#iniciarSesion" style="-fx-background-color: blue; -fx-border-color: red; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;" text="Iniciar Sesion" textFill="WHITE" />
+      <Label layoutX="8.0" layoutY="424.0" text="¿no tienes cuenta?" textFill="WHITE">
+         <font><Font name="System Bold" size="12.0" /></font>
+      </Label>
+      <Button fx:id="btnRegistrarse" layoutX="125.0" layoutY="423.0" mnemonicParsing="false" onAction="#irARegistro" prefHeight="16.0" prefWidth="74.0" style="-fx-background-color: black; -fx-border-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;" text="Registarse!" textFill="WHITE">
+         <font><Font size="7.0" /></font>
+      </Button>
+   </children>
+</Pane>

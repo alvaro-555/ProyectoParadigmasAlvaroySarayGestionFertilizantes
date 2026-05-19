@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alvarosaray.Controlador.MenuController">
+   <children>
+      <ImageView fitHeight="555.0" fitWidth="683.0" layoutY="-169.0" opacity="0.83" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@descarga%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="30.0" prefHeight="89.0" prefWidth="192.0" text="Bienvenido a su gestor &#10;de fertilizantes,&#10;que desea hacer?" textAlignment="CENTER">
+         <font><Font size="18.0" /></font>
+         <textFill>
+            <RadialGradient centerX="0.4834254143646409" centerY="0.16824644549763035" radius="0.557471264367816">
+               <stops>
+                  <Stop><color><Color red="0.49047619104385376" green="1.0" /></color></Stop>
+                  <Stop offset="1.0"><color><Color red="1.0" green="0.9547619223594666" blue="0.05000000074505806" /></color></Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnIniciarSesion" layoutX="88.0" layoutY="147.0" mnemonicParsing="false" onAction="#irAInicioSesion" prefHeight="34.0" prefWidth="136.0" text="Iniciar Sesion">
+         <font><Font size="16.0" /></font>
+      </Button>
+      <Button fx:id="btnRegistrarse" layoutX="119.0" layoutY="205.0" mnemonicParsing="false" onAction="#irARegistro" text="Registrarse" />
+      <Button fx:id="btnDeserializar" layoutX="119.0" layoutY="305.0" mnemonicParsing="false" onAction="#deserializar" text="Deserializar" />
+      <Button fx:id="btnSalir" layoutX="137.0" layoutY="347.0" mnemonicParsing="false" onAction="#salir" style="-fx-border-radius: 8; -fx-background-radius: 8;" text="Salir" />
+   </children>
+</Pane>

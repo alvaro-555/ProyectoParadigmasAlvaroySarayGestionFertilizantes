@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alvarosaray.Controlador.RegistroController">
+   <children>
+      <ImageView fitHeight="554.0" fitWidth="437.0" layoutX="-9.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Menu%20resgistro%20datos.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="95.0" layoutX="330.0" layoutY="1.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Suga!!.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="154.0" layoutY="24.0" text="Registro" textAlignment="CENTER">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="38.0" /></font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop><color><Color red="0.06458333134651184" green="0.02643762156367302" blue="0.40789473056793213" /></color></Stop>
+                  <Stop offset="1.0"><color><Color red="0.30079999566078186" green="0.5443047881126404" blue="0.9399999976158142" /></color></Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+
+      <!-- Seccion Empresa -->
+      <Label layoutX="9.0" layoutY="81.0" style="-fx-background-color: white;" text="Datos de la empresa:" textAlignment="JUSTIFY">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0235294122248888" green="0.05098039284348488" blue="0.01568627543747425" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.0235294122248888" green="0.05098039284348488" blue="0.01568627543747425" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="84.0" layoutY="117.0" style="-fx-background-color: white;" text="Nombre:" textFill="#015b3a">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+      </Label>
+      <TextField fx:id="txtNombreEmpresa" layoutX="172.0" layoutY="118.0" />
+
+      <Label layoutX="14.0" layoutY="159.0" style="-fx-background-color: white;" text="Año Fundacion:" textFill="#015b3a">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+      </Label>
+      <TextField fx:id="txtAnioFundacion" layoutX="172.0" layoutY="160.0" promptText="AAAA (1900-2025)" />
+
+      <Label layoutX="70.0" layoutY="200.0" style="-fx-background-color: white;" text="Ubicacion:" textFill="#015b3a">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+      </Label>
+      <TextField fx:id="txtUbicacion" layoutX="172.0" layoutY="201.0" />
+
+      <!-- Seccion Usuario -->
+      <Label layoutX="9.0" layoutY="238.0" style="-fx-background-color: white;" text="Datos del Usuario:" textAlignment="JUSTIFY">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="117.0" layoutY="274.0" style="-fx-background-color: white;" text="Nombre:" textFill="#015b3a">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+      </Label>
+      <TextField fx:id="txtNombreUsuario" layoutX="216.0" layoutY="275.0" />
+
+      <Label layoutX="91.0" layoutY="320.0" style="-fx-background-color: white;" text="Contraseña:" textFill="#015b3a">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+      </Label>
+      <PasswordField fx:id="txtContrasena" layoutX="216.0" layoutY="321.0" />
+
+      <Label layoutX="129.0" layoutY="360.0" style="-fx-background-color: white;" text="Correo:" textFill="#015b3a">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+      </Label>
+      <TextField fx:id="txtCorreo" layoutX="216.0" layoutY="361.0" />
+
+      <Label layoutY="402.0" style="-fx-background-color: white;" text="Numero de Identificacion:" textFill="#015b3a">
+         <font><Font name="Abadi MT Condensed Extra Bold" size="21.0" /></font>
+      </Label>
+      <TextField fx:id="txtNumDocumento" layoutX="250.0" layoutY="403.0" prefHeight="25.0" prefWidth="141.0" />
+
+      <!-- Botones -->
+      <Button fx:id="btnRegistrar" layoutX="105.0" layoutY="475.0" mnemonicParsing="false" onAction="#registrar" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: #107500; -fx-border-color: #1bbc05; -fx-border-radius: 8; -fx-border-width: 2; -fx-background-radius: 8;" text="Registrar" textFill="#101110">
+         <font><Font size="14.0" /></font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="239.0" layoutY="475.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: red; -fx-border-color: #720303; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 11;" text="Cancelar" textFill="#140808">
+         <font><Font size="14.0" /></font>
+      </Button>
+   </children>
+</Pane>

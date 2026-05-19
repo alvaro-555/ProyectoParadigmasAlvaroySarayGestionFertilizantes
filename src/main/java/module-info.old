@@ -1,0 +1,13 @@
+module com.alvarosaray {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    opens com.alvarosaray to javafx.fxml;
+    opens com.alvarosaray.Controlador to javafx.fxml;
+    opens com.alvarosaray.Model to javafx.base;
+
+    exports com.alvarosaray;
+    exports com.alvarosaray.Controlador;
+    exports com.alvarosaray.Model;
+    exports com.alvarosaray.Servicio;
+}
