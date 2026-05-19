@@ -21,6 +21,9 @@
         <!-- JavaFX -->
         <javafx.version>17.0.8</javafx.version>
 
+        <!-- JUnit -->
+        <junit.version>5.10.0</junit.version>
+
     </properties>
 
     <dependencies>
@@ -37,6 +40,14 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
+        </dependency>
+
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
@@ -93,6 +104,15 @@
                     <mainClass>com.alvarosaray.App</mainClass>
 
                 </configuration>
+
+            </plugin>
+
+            <!-- Surefire para correr JUnit 5 con mvn test -->
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
 
             </plugin>
 
